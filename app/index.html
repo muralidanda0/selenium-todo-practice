@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Todo App - Selenium Practice</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1 id="app-title">📝 My Todo List</h1>
+
+    <!-- Add Todo Form -->
+    <div class="input-area">
+      <input
+        type="text"
+        id="todo-input"
+        placeholder="Add a new task..."
+        maxlength="100"
+      />
+      <button id="add-btn">Add Task</button>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="filter-area">
+      <button id="filter-all"    class="filter-btn active">All</button>
+      <button id="filter-active" class="filter-btn">Active</button>
+      <button id="filter-done"   class="filter-btn">Done</button>
+    </div>
+
+    <!-- Todo List -->
+    <ul id="todo-list"></ul>
+
+    <!-- Footer Stats -->
+    <div class="footer">
+      <span id="item-count">0 tasks remaining</span>
+      <button id="clear-completed-btn">Clear Completed</button>
+    </div>
+
+    <!-- Empty State -->
+    <p id="empty-msg" class="empty-msg">No tasks yet. Add one above!</p>
+
+    <!-- Error Message -->
+    <p id="error-msg" class="error-msg" style="display:none;"></p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
